@@ -1,7 +1,10 @@
-# FloatingHearts
+# FloatingHearts - SWIFT 5
 Periscope-Like floating hearts animation.
 
 Example showing how to recreate the floating hearts animation on Periscope.
+
+# Note
+This is floating hearts if you need to use swift 5
 
 # Demo
 ![Demo](https://github.com/saidmarouf/FloatingHearts/blob/master/hearts.gif)
