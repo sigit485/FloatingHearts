@@ -3,21 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A1A867751CC82E5C001BBB2D /* FloatingHearts.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A867741CC82E5C001BBB2D /* FloatingHearts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A867831CC82E83001BBB2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A867821CC82E83001BBB2D /* AppDelegate.swift */; };
-		A1A867851CC82E83001BBB2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A867841CC82E83001BBB2D /* ViewController.swift */; };
 		A1A867881CC82E83001BBB2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A867861CC82E83001BBB2D /* Main.storyboard */; };
 		A1A8678A1CC82E83001BBB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A867891CC82E83001BBB2D /* Assets.xcassets */; };
 		A1A8678D1CC82E83001BBB2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A8678B1CC82E83001BBB2D /* LaunchScreen.storyboard */; };
 		A1A867961CC82F54001BBB2D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A867951CC82F54001BBB2D /* Helpers.swift */; };
-		A1A867971CC82FA7001BBB2D /* FloatingHearts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A867711CC82E5C001BBB2D /* FloatingHearts.framework */; };
 		A1A867981CC83097001BBB2D /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A867921CC82EBA001BBB2D /* HeartView.swift */; };
 		A1A8679A1CC831A2001BBB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A867991CC831A2001BBB2D /* Assets.xcassets */; };
+		EC3B248D28165DBB00AC8F28 /* FloatingHearts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A867711CC82E5C001BBB2D /* FloatingHearts.framework */; platformFilter = ios; };
+		EC3B248E28165DBB00AC8F28 /* FloatingHearts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1A867711CC82E5C001BBB2D /* FloatingHearts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECBAE2DB281656FA006D2572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A867841CC82E83001BBB2D /* ViewController.swift */; };
+		ECBAE2DD281657D4006D2572 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A867951CC82F54001BBB2D /* Helpers.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC3B248F28165DBB00AC8F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1A867681CC82E5C001BBB2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1A867701CC82E5C001BBB2D;
+			remoteInfo = FloatingHearts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC3B249128165DBB00AC8F28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC3B248E28165DBB00AC8F28 /* FloatingHearts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A1A867711CC82E5C001BBB2D /* FloatingHearts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatingHearts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A867971CC82FA7001BBB2D /* FloatingHearts.framework in Frameworks */,
+				EC3B248D28165DBB00AC8F28 /* FloatingHearts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +86,7 @@
 				A1A867731CC82E5C001BBB2D /* FloatingHearts */,
 				A1A867811CC82E83001BBB2D /* FloatingHeartsExample */,
 				A1A867721CC82E5C001BBB2D /* Products */,
+				EC3B248B28165DA800AC8F28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +102,6 @@
 		A1A867731CC82E5C001BBB2D /* FloatingHearts */ = {
 			isa = PBXGroup;
 			children = (
-				A1A867951CC82F54001BBB2D /* Helpers.swift */,
 				A1A867941CC82ECD001BBB2D /* Views */,
 				A1A867991CC831A2001BBB2D /* Assets.xcassets */,
 				A1A867741CC82E5C001BBB2D /* FloatingHearts.h */,
@@ -100,9 +126,17 @@
 		A1A867941CC82ECD001BBB2D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1A867951CC82F54001BBB2D /* Helpers.swift */,
 				A1A867921CC82EBA001BBB2D /* HeartView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		EC3B248B28165DA800AC8F28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +178,12 @@
 				A1A8677C1CC82E83001BBB2D /* Sources */,
 				A1A8677D1CC82E83001BBB2D /* Frameworks */,
 				A1A8677E1CC82E83001BBB2D /* Resources */,
+				EC3B249128165DBB00AC8F28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC3B249028165DBB00AC8F28 /* PBXTargetDependency */,
 			);
 			name = FloatingHeartsExample;
 			productName = FloatingHeartsExample;
@@ -166,9 +202,11 @@
 				TargetAttributes = {
 					A1A867701CC82E5C001BBB2D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z8GY2XT4W7;
 					};
 					A1A8677F1CC82E83001BBB2D = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z8GY2XT4W7;
 					};
 				};
 			};
@@ -177,6 +215,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -226,12 +265,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A867851CC82E83001BBB2D /* ViewController.swift in Sources */,
+				ECBAE2DB281656FA006D2572 /* ViewController.swift in Sources */,
 				A1A867831CC82E83001BBB2D /* AppDelegate.swift in Sources */,
+				ECBAE2DD281657D4006D2572 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC3B249028165DBB00AC8F28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = A1A867701CC82E5C001BBB2D /* FloatingHearts */;
+			targetProxy = EC3B248F28165DBB00AC8F28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1A867861CC82E83001BBB2D /* Main.storyboard */ = {
@@ -348,17 +397,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z8GY2XT4W7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FloatingHearts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.saidmarouf.FloatingHearts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -366,16 +424,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z8GY2XT4W7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FloatingHearts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.saidmarouf.FloatingHearts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -383,10 +450,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8GY2XT4W7;
 				INFOPLIST_FILE = FloatingHeartsExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.saidmarouf.FloatingHeartsExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sigit.FloatingHearts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -394,10 +466,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8GY2XT4W7;
 				INFOPLIST_FILE = FloatingHeartsExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.saidmarouf.FloatingHeartsExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sigit.FloatingHearts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -420,6 +497,7 @@
 				A1A8677B1CC82E5C001BBB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1A8678F1CC82E83001BBB2D /* Build configuration list for PBXNativeTarget "FloatingHeartsExample" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +506,7 @@
 				A1A867911CC82E83001BBB2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
